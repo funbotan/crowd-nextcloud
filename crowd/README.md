@@ -7,7 +7,7 @@ First, log into your database. This can be done with [pgAdmin](https://www.pgadm
 Now, create the views by executing the following scripts from the database console:
 - [For users](nextcloud_users.sql)
 - [For groups](nextcloud_groups.sql)
-- [For mapping users to groups](nextcloud_user_groups.sql)
+- [For mapping users to groups](nextcloud_user_group.sql)
 
 Next step is to create a role for Nextcloud with permissions to read these views and only them. This can be done via the GUI or by executing a [script](create_user.sql).
 
