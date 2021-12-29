@@ -9,6 +9,7 @@ CREATE ROLE nextcloud WITH
 COMMENT ON ROLE nextcloud IS 'Entry point for the Nextcloud user_sql app with read only permissions';
 
 GRANT CONNECT ON DATABASE crowd TO nextcloud;
+GRANT USAGE ON SCHEMA public TO nextcloud;
 GRANT SELECT ON TABLE public.nextcloud_groups TO nextcloud;
 GRANT SELECT ON TABLE public.nextcloud_user_group TO nextcloud;
 GRANT SELECT ON TABLE public.nextcloud_users TO nextcloud;
